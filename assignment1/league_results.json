@@ -1,0 +1,992 @@
+{
+  "config": {
+    "board": 15,
+    "win": 5,
+    "time_limit": 5.0,
+    "games_per_pair": 6,
+    "scoring": {
+      "win": 3,
+      "draw": 1,
+      "loss": 0
+    },
+    "players": [
+      "Baseline",
+      "Iterative",
+      "Ordering",
+      "MCTS"
+    ]
+  },
+  "completed_games": 36,
+  "matches": [
+    {
+      "id": "Baseline-Iterative-1",
+      "pair": [
+        "Baseline",
+        "Iterative"
+      ],
+      "black": "Baseline",
+      "white": "Iterative",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 23,
+      "wall_seconds": 1.9314,
+      "timing": {
+        "Baseline": {
+          "turns": 12,
+          "seconds": 0.08282330001384253,
+          "max_seconds": 0.013282100000651553
+        },
+        "Iterative": {
+          "turns": 11,
+          "seconds": 1.847588499993435,
+          "max_seconds": 0.5033746999979485
+        }
+      }
+    },
+    {
+      "id": "Baseline-Iterative-2",
+      "pair": [
+        "Baseline",
+        "Iterative"
+      ],
+      "black": "Iterative",
+      "white": "Baseline",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 30,
+      "wall_seconds": 2.3938,
+      "timing": {
+        "Iterative": {
+          "turns": 15,
+          "seconds": 2.3000286999886157,
+          "max_seconds": 0.29773629999544937
+        },
+        "Baseline": {
+          "turns": 15,
+          "seconds": 0.09251180000865133,
+          "max_seconds": 0.012484599996241741
+        }
+      }
+    },
+    {
+      "id": "Baseline-Iterative-3",
+      "pair": [
+        "Baseline",
+        "Iterative"
+      ],
+      "black": "Baseline",
+      "white": "Iterative",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 23,
+      "wall_seconds": 1.916,
+      "timing": {
+        "Baseline": {
+          "turns": 12,
+          "seconds": 0.08200100000249222,
+          "max_seconds": 0.013497400002961513
+        },
+        "Iterative": {
+          "turns": 11,
+          "seconds": 1.8328812999898219,
+          "max_seconds": 0.4974322999987635
+        }
+      }
+    },
+    {
+      "id": "Baseline-Iterative-4",
+      "pair": [
+        "Baseline",
+        "Iterative"
+      ],
+      "black": "Iterative",
+      "white": "Baseline",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 30,
+      "wall_seconds": 2.393,
+      "timing": {
+        "Iterative": {
+          "turns": 15,
+          "seconds": 2.295438799999829,
+          "max_seconds": 0.29623069999797735
+        },
+        "Baseline": {
+          "turns": 15,
+          "seconds": 0.09631270002137171,
+          "max_seconds": 0.013308200002938975
+        }
+      }
+    },
+    {
+      "id": "Baseline-Iterative-5",
+      "pair": [
+        "Baseline",
+        "Iterative"
+      ],
+      "black": "Baseline",
+      "white": "Iterative",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 23,
+      "wall_seconds": 2.0035,
+      "timing": {
+        "Baseline": {
+          "turns": 12,
+          "seconds": 0.08279690000927076,
+          "max_seconds": 0.013635699993756134
+        },
+        "Iterative": {
+          "turns": 11,
+          "seconds": 1.919694399999571,
+          "max_seconds": 0.5093871999997646
+        }
+      }
+    },
+    {
+      "id": "Baseline-Iterative-6",
+      "pair": [
+        "Baseline",
+        "Iterative"
+      ],
+      "black": "Iterative",
+      "white": "Baseline",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 30,
+      "wall_seconds": 2.4443,
+      "timing": {
+        "Iterative": {
+          "turns": 15,
+          "seconds": 2.346720000015921,
+          "max_seconds": 0.33203360000334214
+        },
+        "Baseline": {
+          "turns": 15,
+          "seconds": 0.09621739999420242,
+          "max_seconds": 0.012571200000820681
+        }
+      }
+    },
+    {
+      "id": "Baseline-Ordering-1",
+      "pair": [
+        "Baseline",
+        "Ordering"
+      ],
+      "black": "Baseline",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 12,
+      "wall_seconds": 0.0794,
+      "timing": {
+        "Baseline": {
+          "turns": 6,
+          "seconds": 0.032521100001758896,
+          "max_seconds": 0.011283100000582635
+        },
+        "Ordering": {
+          "turns": 6,
+          "seconds": 0.04650189999665599,
+          "max_seconds": 0.011957200003962498
+        }
+      }
+    },
+    {
+      "id": "Baseline-Ordering-2",
+      "pair": [
+        "Baseline",
+        "Ordering"
+      ],
+      "black": "Ordering",
+      "white": "Baseline",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 17,
+      "wall_seconds": 0.1073,
+      "timing": {
+        "Ordering": {
+          "turns": 9,
+          "seconds": 0.05618250000406988,
+          "max_seconds": 0.010693299998820294
+        },
+        "Baseline": {
+          "turns": 8,
+          "seconds": 0.050522599995019846,
+          "max_seconds": 0.012031099999148864
+        }
+      }
+    },
+    {
+      "id": "Baseline-Ordering-3",
+      "pair": [
+        "Baseline",
+        "Ordering"
+      ],
+      "black": "Baseline",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 12,
+      "wall_seconds": 0.0815,
+      "timing": {
+        "Baseline": {
+          "turns": 6,
+          "seconds": 0.034052300012263004,
+          "max_seconds": 0.011561100000108127
+        },
+        "Ordering": {
+          "turns": 6,
+          "seconds": 0.04695269999501761,
+          "max_seconds": 0.01181209999776911
+        }
+      }
+    },
+    {
+      "id": "Baseline-Ordering-4",
+      "pair": [
+        "Baseline",
+        "Ordering"
+      ],
+      "black": "Ordering",
+      "white": "Baseline",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 17,
+      "wall_seconds": 0.1291,
+      "timing": {
+        "Ordering": {
+          "turns": 9,
+          "seconds": 0.06937690000631846,
+          "max_seconds": 0.016838600000482984
+        },
+        "Baseline": {
+          "turns": 8,
+          "seconds": 0.05889509998814901,
+          "max_seconds": 0.013418299997283611
+        }
+      }
+    },
+    {
+      "id": "Baseline-Ordering-5",
+      "pair": [
+        "Baseline",
+        "Ordering"
+      ],
+      "black": "Baseline",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 12,
+      "wall_seconds": 0.0822,
+      "timing": {
+        "Baseline": {
+          "turns": 6,
+          "seconds": 0.03276499999628868,
+          "max_seconds": 0.011177399996086024
+        },
+        "Ordering": {
+          "turns": 6,
+          "seconds": 0.048953700010315515,
+          "max_seconds": 0.012422600004356354
+        }
+      }
+    },
+    {
+      "id": "Baseline-Ordering-6",
+      "pair": [
+        "Baseline",
+        "Ordering"
+      ],
+      "black": "Ordering",
+      "white": "Baseline",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 17,
+      "wall_seconds": 0.1089,
+      "timing": {
+        "Ordering": {
+          "turns": 9,
+          "seconds": 0.05765730002167402,
+          "max_seconds": 0.010904500006290618
+        },
+        "Baseline": {
+          "turns": 8,
+          "seconds": 0.05061440001009032,
+          "max_seconds": 0.01181160000123782
+        }
+      }
+    },
+    {
+      "id": "Baseline-MCTS-1",
+      "pair": [
+        "Baseline",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Baseline",
+      "winner": "MCTS",
+      "reason": "5-in-a-row",
+      "moves": 39,
+      "wall_seconds": 56.398,
+      "timing": {
+        "MCTS": {
+          "turns": 20,
+          "seconds": 56.256782999997085,
+          "max_seconds": 3.750397600000724
+        },
+        "Baseline": {
+          "turns": 19,
+          "seconds": 0.1396537000182434,
+          "max_seconds": 0.013697800000954885
+        }
+      }
+    },
+    {
+      "id": "Baseline-MCTS-2",
+      "pair": [
+        "Baseline",
+        "MCTS"
+      ],
+      "black": "Baseline",
+      "white": "MCTS",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 13,
+      "wall_seconds": 22.5341,
+      "timing": {
+        "Baseline": {
+          "turns": 7,
+          "seconds": 0.03185680000751745,
+          "max_seconds": 0.00964390000444837
+        },
+        "MCTS": {
+          "turns": 6,
+          "seconds": 22.501754299999448,
+          "max_seconds": 3.750326099994709
+        }
+      }
+    },
+    {
+      "id": "Baseline-MCTS-3",
+      "pair": [
+        "Baseline",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Baseline",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 20,
+      "wall_seconds": 30.0642,
+      "timing": {
+        "MCTS": {
+          "turns": 10,
+          "seconds": 30.00329989999591,
+          "max_seconds": 3.750361200000043
+        },
+        "Baseline": {
+          "turns": 10,
+          "seconds": 0.060045400001399685,
+          "max_seconds": 0.014909900004568044
+        }
+      }
+    },
+    {
+      "id": "Baseline-MCTS-4",
+      "pair": [
+        "Baseline",
+        "MCTS"
+      ],
+      "black": "Baseline",
+      "white": "MCTS",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 19,
+      "wall_seconds": 33.8195,
+      "timing": {
+        "Baseline": {
+          "turns": 10,
+          "seconds": 0.06602019999263575,
+          "max_seconds": 0.011893399998371024
+        },
+        "MCTS": {
+          "turns": 9,
+          "seconds": 33.752714000002015,
+          "max_seconds": 3.7503424000024097
+        }
+      }
+    },
+    {
+      "id": "Baseline-MCTS-5",
+      "pair": [
+        "Baseline",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Baseline",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 14,
+      "wall_seconds": 22.5315,
+      "timing": {
+        "MCTS": {
+          "turns": 7,
+          "seconds": 22.5021301000088,
+          "max_seconds": 3.7503638999987743
+        },
+        "Baseline": {
+          "turns": 7,
+          "seconds": 0.02878920000512153,
+          "max_seconds": 0.009454899998672772
+        }
+      }
+    },
+    {
+      "id": "Baseline-MCTS-6",
+      "pair": [
+        "Baseline",
+        "MCTS"
+      ],
+      "black": "Baseline",
+      "white": "MCTS",
+      "winner": "Baseline",
+      "reason": "5-in-a-row",
+      "moves": 17,
+      "wall_seconds": 26.32,
+      "timing": {
+        "Baseline": {
+          "turns": 9,
+          "seconds": 0.06635130000358913,
+          "max_seconds": 0.01569290000043111
+        },
+        "MCTS": {
+          "turns": 8,
+          "seconds": 26.25298539999494,
+          "max_seconds": 3.750426400001743
+        }
+      }
+    },
+    {
+      "id": "Iterative-Ordering-1",
+      "pair": [
+        "Iterative",
+        "Ordering"
+      ],
+      "black": "Iterative",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 32,
+      "wall_seconds": 4.2325,
+      "timing": {
+        "Iterative": {
+          "turns": 16,
+          "seconds": 4.055430200001865,
+          "max_seconds": 0.5197213999999803
+        },
+        "Ordering": {
+          "turns": 16,
+          "seconds": 0.17555479999282397,
+          "max_seconds": 0.015940199999022298
+        }
+      }
+    },
+    {
+      "id": "Iterative-Ordering-2",
+      "pair": [
+        "Iterative",
+        "Ordering"
+      ],
+      "black": "Ordering",
+      "white": "Iterative",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 23,
+      "wall_seconds": 2.844,
+      "timing": {
+        "Ordering": {
+          "turns": 12,
+          "seconds": 0.12128159999701893,
+          "max_seconds": 0.01397789999464294
+        },
+        "Iterative": {
+          "turns": 11,
+          "seconds": 2.7215710999953444,
+          "max_seconds": 0.9035252999965451
+        }
+      }
+    },
+    {
+      "id": "Iterative-Ordering-3",
+      "pair": [
+        "Iterative",
+        "Ordering"
+      ],
+      "black": "Iterative",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 32,
+      "wall_seconds": 3.6301,
+      "timing": {
+        "Iterative": {
+          "turns": 16,
+          "seconds": 3.4744792000055895,
+          "max_seconds": 0.3776503999979468
+        },
+        "Ordering": {
+          "turns": 16,
+          "seconds": 0.15416629999526776,
+          "max_seconds": 0.014229899999918416
+        }
+      }
+    },
+    {
+      "id": "Iterative-Ordering-4",
+      "pair": [
+        "Iterative",
+        "Ordering"
+      ],
+      "black": "Ordering",
+      "white": "Iterative",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 23,
+      "wall_seconds": 2.7338,
+      "timing": {
+        "Ordering": {
+          "turns": 12,
+          "seconds": 0.11603240000113146,
+          "max_seconds": 0.015047900000354275
+        },
+        "Iterative": {
+          "turns": 11,
+          "seconds": 2.6167111999893677,
+          "max_seconds": 0.9796066999988398
+        }
+      }
+    },
+    {
+      "id": "Iterative-Ordering-5",
+      "pair": [
+        "Iterative",
+        "Ordering"
+      ],
+      "black": "Iterative",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 32,
+      "wall_seconds": 3.6157,
+      "timing": {
+        "Iterative": {
+          "turns": 16,
+          "seconds": 3.4556156000035116,
+          "max_seconds": 0.3573974000028102
+        },
+        "Ordering": {
+          "turns": 16,
+          "seconds": 0.1587676000126521,
+          "max_seconds": 0.01612300000124378
+        }
+      }
+    },
+    {
+      "id": "Iterative-Ordering-6",
+      "pair": [
+        "Iterative",
+        "Ordering"
+      ],
+      "black": "Ordering",
+      "white": "Iterative",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 23,
+      "wall_seconds": 2.7177,
+      "timing": {
+        "Ordering": {
+          "turns": 12,
+          "seconds": 0.12179950000427198,
+          "max_seconds": 0.025083100001211278
+        },
+        "Iterative": {
+          "turns": 11,
+          "seconds": 2.5948737999933655,
+          "max_seconds": 0.9526673000000301
+        }
+      }
+    },
+    {
+      "id": "Iterative-MCTS-1",
+      "pair": [
+        "Iterative",
+        "MCTS"
+      ],
+      "black": "Iterative",
+      "white": "MCTS",
+      "winner": "Iterative",
+      "reason": "5-in-a-row",
+      "moves": 17,
+      "wall_seconds": 27.6936,
+      "timing": {
+        "Iterative": {
+          "turns": 9,
+          "seconds": 1.4401962000119966,
+          "max_seconds": 0.3367376999958651
+        },
+        "MCTS": {
+          "turns": 8,
+          "seconds": 26.2526068000152,
+          "max_seconds": 3.7503413000013097
+        }
+      }
+    },
+    {
+      "id": "Iterative-MCTS-2",
+      "pair": [
+        "Iterative",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Iterative",
+      "winner": "Iterative",
+      "reason": "5-in-a-row",
+      "moves": 18,
+      "wall_seconds": 31.4476,
+      "timing": {
+        "MCTS": {
+          "turns": 9,
+          "seconds": 30.0027889999983,
+          "max_seconds": 3.750381199999538
+        },
+        "Iterative": {
+          "turns": 9,
+          "seconds": 1.4440982000014628,
+          "max_seconds": 0.34247380000306293
+        }
+      }
+    },
+    {
+      "id": "Iterative-MCTS-3",
+      "pair": [
+        "Iterative",
+        "MCTS"
+      ],
+      "black": "Iterative",
+      "white": "MCTS",
+      "winner": "Iterative",
+      "reason": "5-in-a-row",
+      "moves": 13,
+      "wall_seconds": 23.5266,
+      "timing": {
+        "Iterative": {
+          "turns": 7,
+          "seconds": 1.0241678999955184,
+          "max_seconds": 0.39981619999889517
+        },
+        "MCTS": {
+          "turns": 6,
+          "seconds": 22.501910200000566,
+          "max_seconds": 3.750377099997422
+        }
+      }
+    },
+    {
+      "id": "Iterative-MCTS-4",
+      "pair": [
+        "Iterative",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Iterative",
+      "winner": "Iterative",
+      "reason": "5-in-a-row",
+      "moves": 12,
+      "wall_seconds": 19.5217,
+      "timing": {
+        "MCTS": {
+          "turns": 6,
+          "seconds": 18.751887700003863,
+          "max_seconds": 3.750403700003517
+        },
+        "Iterative": {
+          "turns": 6,
+          "seconds": 0.7693665000042529,
+          "max_seconds": 0.23091099999874132
+        }
+      }
+    },
+    {
+      "id": "Iterative-MCTS-5",
+      "pair": [
+        "Iterative",
+        "MCTS"
+      ],
+      "black": "Iterative",
+      "white": "MCTS",
+      "winner": "MCTS",
+      "reason": "5-in-a-row",
+      "moves": 14,
+      "wall_seconds": 24.0494,
+      "timing": {
+        "Iterative": {
+          "turns": 7,
+          "seconds": 1.5458120000112103,
+          "max_seconds": 0.3948004000048968
+        },
+        "MCTS": {
+          "turns": 7,
+          "seconds": 22.502968399989186,
+          "max_seconds": 3.7509388999969815
+        }
+      }
+    },
+    {
+      "id": "Iterative-MCTS-6",
+      "pair": [
+        "Iterative",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Iterative",
+      "winner": "Iterative",
+      "reason": "5-in-a-row",
+      "moves": 26,
+      "wall_seconds": 46.7811,
+      "timing": {
+        "MCTS": {
+          "turns": 13,
+          "seconds": 45.00524700000096,
+          "max_seconds": 3.7509834000011324
+        },
+        "Iterative": {
+          "turns": 13,
+          "seconds": 1.774786199996015,
+          "max_seconds": 0.3048362999979872
+        }
+      }
+    },
+    {
+      "id": "Ordering-MCTS-1",
+      "pair": [
+        "Ordering",
+        "MCTS"
+      ],
+      "black": "Ordering",
+      "white": "MCTS",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 11,
+      "wall_seconds": 18.7844,
+      "timing": {
+        "Ordering": {
+          "turns": 6,
+          "seconds": 0.03173190000234172,
+          "max_seconds": 0.009178899999824353
+        },
+        "MCTS": {
+          "turns": 5,
+          "seconds": 18.752205700002378,
+          "max_seconds": 3.750799699999334
+        }
+      }
+    },
+    {
+      "id": "Ordering-MCTS-2",
+      "pair": [
+        "Ordering",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 28,
+      "wall_seconds": 45.1014,
+      "timing": {
+        "MCTS": {
+          "turns": 14,
+          "seconds": 45.00466630000301,
+          "max_seconds": 3.750478699999803
+        },
+        "Ordering": {
+          "turns": 14,
+          "seconds": 0.09557430000859313,
+          "max_seconds": 0.011850400005641859
+        }
+      }
+    },
+    {
+      "id": "Ordering-MCTS-3",
+      "pair": [
+        "Ordering",
+        "MCTS"
+      ],
+      "black": "Ordering",
+      "white": "MCTS",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 11,
+      "wall_seconds": 18.7845,
+      "timing": {
+        "Ordering": {
+          "turns": 6,
+          "seconds": 0.0324484999946435,
+          "max_seconds": 0.009797200000321027
+        },
+        "MCTS": {
+          "turns": 5,
+          "seconds": 18.7515355999858,
+          "max_seconds": 3.75035879999632
+        }
+      }
+    },
+    {
+      "id": "Ordering-MCTS-4",
+      "pair": [
+        "Ordering",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Ordering",
+      "winner": "MCTS",
+      "reason": "5-in-a-row",
+      "moves": 25,
+      "wall_seconds": 37.5904,
+      "timing": {
+        "MCTS": {
+          "turns": 13,
+          "seconds": 37.504556399995636,
+          "max_seconds": 3.7504924000022584
+        },
+        "Ordering": {
+          "turns": 12,
+          "seconds": 0.08476029998564627,
+          "max_seconds": 0.011845499997434672
+        }
+      }
+    },
+    {
+      "id": "Ordering-MCTS-5",
+      "pair": [
+        "Ordering",
+        "MCTS"
+      ],
+      "black": "Ordering",
+      "white": "MCTS",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 9,
+      "wall_seconds": 15.022,
+      "timing": {
+        "Ordering": {
+          "turns": 5,
+          "seconds": 0.02040570000099251,
+          "max_seconds": 0.007757799998216797
+        },
+        "MCTS": {
+          "turns": 4,
+          "seconds": 15.00125749999279,
+          "max_seconds": 3.7503548999957275
+        }
+      }
+    },
+    {
+      "id": "Ordering-MCTS-6",
+      "pair": [
+        "Ordering",
+        "MCTS"
+      ],
+      "black": "MCTS",
+      "white": "Ordering",
+      "winner": "Ordering",
+      "reason": "5-in-a-row",
+      "moves": 12,
+      "wall_seconds": 18.8006,
+      "timing": {
+        "MCTS": {
+          "turns": 6,
+          "seconds": 18.751879000010376,
+          "max_seconds": 3.750373800001398
+        },
+        "Ordering": {
+          "turns": 6,
+          "seconds": 0.04816749999008607,
+          "max_seconds": 0.012022199996863492
+        }
+      }
+    }
+  ],
+  "standings": [
+    {
+      "name": "Ordering",
+      "played": 18,
+      "wins": 17,
+      "draws": 0,
+      "losses": 1,
+      "points": 51,
+      "black": 9,
+      "white": 9,
+      "thinking_turns": 178,
+      "thinking_seconds": 1.486315400019521,
+      "max_move_seconds": 0.025083100001211278,
+      "total_game_moves": 348,
+      "rank": 1,
+      "average_move_seconds": 0.0083500865169636,
+      "average_game_moves": 19.333333333333332
+    },
+    {
+      "name": "Baseline",
+      "played": 18,
+      "wins": 11,
+      "draws": 0,
+      "losses": 7,
+      "points": 33,
+      "black": 9,
+      "white": 9,
+      "thinking_turns": 185,
+      "thinking_seconds": 1.1847502000819077,
+      "max_move_seconds": 0.01569290000043111,
+      "total_game_moves": 368,
+      "rank": 2,
+      "average_move_seconds": 0.006404055135577879,
+      "average_game_moves": 20.444444444444443
+    },
+    {
+      "name": "Iterative",
+      "played": 18,
+      "wins": 5,
+      "draws": 0,
+      "losses": 13,
+      "points": 15,
+      "black": 9,
+      "white": 9,
+      "thinking_turns": 210,
+      "thinking_seconds": 39.459459799996694,
+      "max_move_seconds": 0.9796066999988398,
+      "total_game_moves": 424,
+      "rank": 3,
+      "average_move_seconds": 0.18790218952379378,
+      "average_game_moves": 23.555555555555557
+    },
+    {
+      "name": "MCTS",
+      "played": 18,
+      "wins": 3,
+      "draws": 0,
+      "losses": 15,
+      "points": 9,
+      "black": 9,
+      "white": 9,
+      "thinking_turns": 156,
+      "thinking_seconds": 510.05317629999627,
+      "max_move_seconds": 3.7509834000011324,
+      "total_game_moves": 318,
+      "rank": 4,
+      "average_move_seconds": 3.269571642948694,
+      "average_game_moves": 17.666666666666668
+    }
+  ]
+}
